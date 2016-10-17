@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "IQKeyboardManager.h"
+#import <AVOSCloud/AVOSCloud.h>
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [AVOSCloud setApplicationId:@"MGxchv9us4x5EphPJct2unwt-gzGzoHsz" clientKey:@"GSU7bY8F8ziJiv7hmtar7eiG"];
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    MainViewController *rootView = [[MainViewController alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = rootView;
+    self.window.backgroundColor = [UIColor grayColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PublishViewController.h
 //  WoolenHome
 //
 //  Created by Master.lyn on 16/10/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PublishViewController : UIViewController
 
 @end
-
