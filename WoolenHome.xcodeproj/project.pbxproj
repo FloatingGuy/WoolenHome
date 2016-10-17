@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29386A28A999BC8884FE0BA1 /* Pods_WoolenHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5149A8511BB9D42B2F23A9EA /* Pods_WoolenHome.framework */; };
 		9945EDA91DB4B0060094ED75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDA81DB4B0060094ED75 /* main.m */; };
 		9945EDAC1DB4B0060094ED75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDAB1DB4B0060094ED75 /* AppDelegate.m */; };
 		9945EDAF1DB4B0060094ED75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDAE1DB4B0060094ED75 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		9945EDBA1DB4B0060094ED75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9945EDB81DB4B0060094ED75 /* LaunchScreen.storyboard */; };
 		9945EDC51DB4B0060094ED75 /* WoolenHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDC41DB4B0060094ED75 /* WoolenHomeTests.m */; };
 		9945EDD01DB4B0060094ED75 /* WoolenHomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDCF1DB4B0060094ED75 /* WoolenHomeUITests.m */; };
+		9945EDDF1DB4C6480094ED75 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDDE1DB4C6480094ED75 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5149A8511BB9D42B2F23A9EA /* Pods_WoolenHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoolenHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6285FAB2786041D0E993F54E /* Pods-WoolenHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoolenHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoolenHome/Pods-WoolenHome.debug.xcconfig"; sourceTree = "<group>"; };
+		97A75E7176BF8910E6700CFD /* Pods-WoolenHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoolenHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoolenHome/Pods-WoolenHome.release.xcconfig"; sourceTree = "<group>"; };
 		9945EDA41DB4B0060094ED75 /* WoolenHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoolenHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9945EDA81DB4B0060094ED75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9945EDAA1DB4B0060094ED75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +58,8 @@
 		9945EDCB1DB4B0060094ED75 /* WoolenHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoolenHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9945EDCF1DB4B0060094ED75 /* WoolenHomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WoolenHomeUITests.m; sourceTree = "<group>"; };
 		9945EDD11DB4B0060094ED75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9945EDDD1DB4C6480094ED75 /* WoolenHome-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WoolenHome-Bridging-Header.h"; sourceTree = "<group>"; };
+		9945EDDE1DB4C6480094ED75 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29386A28A999BC8884FE0BA1 /* Pods_WoolenHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9E909C98D050BF3FEEF001 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6285FAB2786041D0E993F54E /* Pods-WoolenHome.debug.xcconfig */,
+				97A75E7176BF8910E6700CFD /* Pods-WoolenHome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8118C687BD32713808720B9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5149A8511BB9D42B2F23A9EA /* Pods_WoolenHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9945ED9B1DB4B0060094ED75 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +112,8 @@
 				9945EDC31DB4B0060094ED75 /* WoolenHomeTests */,
 				9945EDCE1DB4B0060094ED75 /* WoolenHomeUITests */,
 				9945EDA51DB4B0060094ED75 /* Products */,
+				0A9E909C98D050BF3FEEF001 /* Pods */,
+				8118C687BD32713808720B9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +140,8 @@
 				9945EDBB1DB4B0060094ED75 /* Info.plist */,
 				9945EDB31DB4B0060094ED75 /* WoolenHome.xcdatamodeld */,
 				9945EDA71DB4B0060094ED75 /* Supporting Files */,
+				9945EDDE1DB4C6480094ED75 /* File.swift */,
+				9945EDDD1DB4C6480094ED75 /* WoolenHome-Bridging-Header.h */,
 			);
 			path = WoolenHome;
 			sourceTree = "<group>";
@@ -150,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9945EDD41DB4B0060094ED75 /* Build configuration list for PBXNativeTarget "WoolenHome" */;
 			buildPhases = (
+				49744D12A3DB961767704EAF /* [CP] Check Pods Manifest.lock */,
 				9945EDA01DB4B0060094ED75 /* Sources */,
 				9945EDA11DB4B0060094ED75 /* Frameworks */,
 				9945EDA21DB4B0060094ED75 /* Resources */,
+				6683FC8FE75B93C8144240AC /* [CP] Embed Pods Frameworks */,
+				1CA17247E304E175D59835AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,6 +243,7 @@
 					9945EDA31DB4B0060094ED75 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2H57F29PL5;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					9945EDBF1DB4B0060094ED75 = {
@@ -274,11 +307,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CA17247E304E175D59835AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoolenHome/Pods-WoolenHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49744D12A3DB961767704EAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6683FC8FE75B93C8144240AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoolenHome/Pods-WoolenHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9945EDA01DB4B0060094ED75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9945EDDF1DB4C6480094ED75 /* File.swift in Sources */,
 				9945EDB51DB4B0060094ED75 /* WoolenHome.xcdatamodeld in Sources */,
 				9945EDAF1DB4B0060094ED75 /* ViewController.m in Sources */,
 				9945EDAC1DB4B0060094ED75 /* AppDelegate.m in Sources */,
@@ -427,31 +509,41 @@
 		};
 		9945EDD51DB4B0060094ED75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6285FAB2786041D0E993F54E /* Pods-WoolenHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2H57F29PL5;
 				INFOPLIST_FILE = WoolenHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigCat.com.WoolenHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WoolenHome/WoolenHome-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9945EDD61DB4B0060094ED75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A75E7176BF8910E6700CFD /* Pods-WoolenHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2H57F29PL5;
 				INFOPLIST_FILE = WoolenHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BigCat.com.WoolenHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WoolenHome/WoolenHome-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		9945EDD81DB4B0060094ED75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2H57F29PL5;
 				INFOPLIST_FILE = WoolenHomeTests/Info.plist;
@@ -465,6 +557,7 @@
 		9945EDD91DB4B0060094ED75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 2H57F29PL5;
 				INFOPLIST_FILE = WoolenHomeTests/Info.plist;
@@ -478,6 +571,7 @@
 		9945EDDB1DB4B0060094ED75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2H57F29PL5;
 				INFOPLIST_FILE = WoolenHomeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -490,6 +584,7 @@
 		9945EDDC1DB4B0060094ED75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2H57F29PL5;
 				INFOPLIST_FILE = WoolenHomeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -518,6 +613,7 @@
 				9945EDD61DB4B0060094ED75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9945EDD71DB4B0060094ED75 /* Build configuration list for PBXNativeTarget "WoolenHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +622,7 @@
 				9945EDD91DB4B0060094ED75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9945EDDA1DB4B0060094ED75 /* Build configuration list for PBXNativeTarget "WoolenHomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +631,7 @@
 				9945EDDC1DB4B0060094ED75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
