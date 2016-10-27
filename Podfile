@@ -14,4 +14,5 @@ target 'WoolenHome' do
    pod 'AVOSCloud'
    pod 'AVOSCloudIM'
    pod 'AVOSCloudCrashReporting'
+   pod 'BATabBarController'
 end
