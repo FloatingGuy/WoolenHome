@@ -14,12 +14,26 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - AVOSCloud (3.3.5)
-  - AVOSCloudCrashReporting (3.3.5):
-    - AVOSCloud
-  - AVOSCloudIM (3.3.5):
-    - AVOSCloud
-  - BATabBarController (0.1.2):
+  - AVOSCloud (3.6.1)
+  - AVOSCloudCrashReporting (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudCrashReporting/_ARC (= 3.6.1)
+    - AVOSCloudCrashReporting/_NOARC (= 3.6.1)
+  - AVOSCloudCrashReporting/_ARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudCrashReporting/_NOARC (= 3.6.1)
+  - AVOSCloudCrashReporting/_NOARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+  - AVOSCloudIM (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudIM/_ARC (= 3.6.1)
+    - AVOSCloudIM/_NOARC (= 3.6.1)
+  - AVOSCloudIM/_ARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+    - AVOSCloudIM/_NOARC (= 3.6.1)
+  - AVOSCloudIM/_NOARC (3.6.1):
+    - AVOSCloud (= 3.6.1)
+  - BATabBarController (0.1.3):
     - Masonry
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
@@ -36,28 +50,28 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
-  - DKNightVersion (2.4.0):
-    - DKNightVersion/Core (= 2.4.0)
-    - DKNightVersion/CoreAnimation (= 2.4.0)
-    - DKNightVersion/UIKit (= 2.4.0)
-  - DKNightVersion/Core (2.4.0):
-    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.0)
-    - DKNightVersion/Core/extobjc (= 2.4.0)
-  - DKNightVersion/Core/DeallocBlockExecutor (2.4.0)
-  - DKNightVersion/Core/extobjc (2.4.0)
-  - DKNightVersion/CoreAnimation (2.4.0):
+  - DKNightVersion (2.4.2):
+    - DKNightVersion/Core (= 2.4.2)
+    - DKNightVersion/CoreAnimation (= 2.4.2)
+    - DKNightVersion/UIKit (= 2.4.2)
+  - DKNightVersion/Core (2.4.2):
+    - DKNightVersion/Core/DeallocBlockExecutor (= 2.4.2)
+    - DKNightVersion/Core/extobjc (= 2.4.2)
+  - DKNightVersion/Core/DeallocBlockExecutor (2.4.2)
+  - DKNightVersion/Core/extobjc (2.4.2)
+  - DKNightVersion/CoreAnimation (2.4.2):
     - DKNightVersion/Core
-  - DKNightVersion/UIKit (2.4.0):
+  - DKNightVersion/UIKit (2.4.2):
     - DKNightVersion/Core
   - FBRetainCycleDetector (0.1.3)
   - FDFullscreenPopGesture (1.1)
-  - IQKeyboardManager (4.0.5)
-  - Masonry (1.0.1)
+  - IQKeyboardManager (4.0.7)
+  - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - pop (1.0.9)
-  - YYKit (1.0.7):
-    - YYKit/no-arc (= 1.0.7)
-  - YYKit/no-arc (1.0.7)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
@@ -76,19 +90,19 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  AVOSCloud: 1fe170768bee7e05bc3ea86e38d5bddb105cb957
-  AVOSCloudCrashReporting: 7ad087db785a25d6ef03cb54c2c0b460eb32dabb
-  AVOSCloudIM: dc307c48e951fcd861f4ae6db6d807e7b40639c8
-  BATabBarController: 4e4f7841f20fe516cee97d349a94c185a489cd6e
+  AVOSCloud: cc9b567da2d30f07e3da1e4db682cad9ff56a1b6
+  AVOSCloudCrashReporting: 3caf6fedffb29fe4b1430780cda582cadac221c4
+  AVOSCloudIM: 7c30a50d1e8f6afee000a2037ea24eb6abcbc8db
+  BATabBarController: b198a0530fff9233450ed35f43a96431e0815d31
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  DKNightVersion: a46e6623767216cbff843192f9eac1a5aa177a44
+  DKNightVersion: a211bacb8d6a9677722aaf93e292a4e5908490c1
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
-  IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
-  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
-  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
 PODFILE CHECKSUM: 418359a776b669b84b145db5809bb2b29bccbe6e
 

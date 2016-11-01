@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 
 #import "BATabBar.h"
+#import "BATabBarBadge.h"
 #import "BATabBarController.h"
 #import "BATabBarItem.h"
 #import "UIColor+ColorWithHex.h"

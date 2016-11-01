@@ -85,6 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloud/AVOSCloud.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloudCrashReporting/AVOSCloudCrashReporting.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloudIM/AVOSCloudIM.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BATabBarController/BATabBarController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BlocksKit/BlocksKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
@@ -98,6 +101,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloud/AVOSCloud.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloudCrashReporting/AVOSCloudCrashReporting.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloudIM/AVOSCloudIM.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BATabBarController/BATabBarController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BlocksKit/BlocksKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
