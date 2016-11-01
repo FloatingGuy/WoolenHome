@@ -10,6 +10,7 @@
 #import "IQKeyboardManager.h"
 #import <AVOSCloud/AVOSCloud.h>
 #import "MainViewController.h"
+#import "WHBasePreference.h"
 
 @interface AppDelegate ()
 
@@ -24,12 +25,32 @@
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     
+    BOOL isNotFirstLogin = [WHBasePreference getUserInfoNumberByKey:@"notFirstLogin"].boolValue;
+    if (!isNotFirstLogin) {
+        //展示欢迎界面
+        NSLog(@"展示欢迎界面");
+    } else {
+        //展示登录界面
+        NSLog(@"展示登录界面");
+    }
+    [WHBasePreference saveUserInfoKey:@"notFirstLogin" numberValue:[NSNumber numberWithBool:YES]];
+    
     MainViewController *rootView = [[MainViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = rootView;
     self.window.backgroundColor = [UIColor grayColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void) initConfiguration {
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.shouldToolbarUsesTextFieldTintColor = YES;
+    manager.enableAutoToolbar = YES;
+    manager.shouldShowTextFieldPlaceholder = NO;
+    
 }
 
 

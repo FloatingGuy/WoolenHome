@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29386A28A999BC8884FE0BA1 /* Pods_WoolenHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5149A8511BB9D42B2F23A9EA /* Pods_WoolenHome.framework */; };
+		993423671DC846E900C5AD44 /* WHBasePreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 993423661DC846E900C5AD44 /* WHBasePreference.m */; };
 		9945EDA91DB4B0060094ED75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDA81DB4B0060094ED75 /* main.m */; };
 		9945EDAC1DB4B0060094ED75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDAB1DB4B0060094ED75 /* AppDelegate.m */; };
 		9945EDAF1DB4B0060094ED75 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDAE1DB4B0060094ED75 /* MainViewController.m */; };
@@ -44,6 +45,8 @@
 		5149A8511BB9D42B2F23A9EA /* Pods_WoolenHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoolenHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6285FAB2786041D0E993F54E /* Pods-WoolenHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoolenHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoolenHome/Pods-WoolenHome.debug.xcconfig"; sourceTree = "<group>"; };
 		97A75E7176BF8910E6700CFD /* Pods-WoolenHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoolenHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoolenHome/Pods-WoolenHome.release.xcconfig"; sourceTree = "<group>"; };
+		993423651DC846E900C5AD44 /* WHBasePreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WHBasePreference.h; path = WoolenHome/WHBasePreference.h; sourceTree = "<group>"; };
+		993423661DC846E900C5AD44 /* WHBasePreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WHBasePreference.m; path = WoolenHome/WHBasePreference.m; sourceTree = "<group>"; };
 		9945EDA41DB4B0060094ED75 /* WoolenHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoolenHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9945EDA81DB4B0060094ED75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9945EDAA1DB4B0060094ED75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WoolenHome/AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				9945EDA61DB4B0060094ED75 /* WoolenHome */,
 				9945EDAA1DB4B0060094ED75 /* AppDelegate.h */,
 				9945EDAB1DB4B0060094ED75 /* AppDelegate.m */,
+				993423651DC846E900C5AD44 /* WHBasePreference.h */,
+				993423661DC846E900C5AD44 /* WHBasePreference.m */,
 				9945EDC31DB4B0060094ED75 /* WoolenHomeTests */,
 				9945EDCE1DB4B0060094ED75 /* WoolenHomeUITests */,
 				9945EDA51DB4B0060094ED75 /* Products */,
@@ -404,6 +409,7 @@
 				9945EDAF1DB4B0060094ED75 /* MainViewController.m in Sources */,
 				9945EDE81DB4CCA30094ED75 /* PublishViewController.m in Sources */,
 				9945EDAC1DB4B0060094ED75 /* AppDelegate.m in Sources */,
+				993423671DC846E900C5AD44 /* WHBasePreference.m in Sources */,
 				9945EDEB1DB4CCB70094ED75 /* UserViewController.m in Sources */,
 				9945EDE51DB4CC790094ED75 /* ForumViewController.m in Sources */,
 				9945EDA91DB4B0060094ED75 /* main.m in Sources */,
@@ -559,7 +565,7 @@
 				INFOPLIST_FILE = WoolenHome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BigCat.com.WoolenHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BigCat.WoolenHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WoolenHome/WoolenHome-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -577,7 +583,7 @@
 				INFOPLIST_FILE = WoolenHome/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = BigCat.com.WoolenHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BigCat.WoolenHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WoolenHome/WoolenHome-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
