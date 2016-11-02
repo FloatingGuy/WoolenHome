@@ -22,6 +22,8 @@
 		9945EDE51DB4CC790094ED75 /* ForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDE41DB4CC790094ED75 /* ForumViewController.m */; };
 		9945EDE81DB4CCA30094ED75 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDE71DB4CCA30094ED75 /* PublishViewController.m */; };
 		9945EDEB1DB4CCB70094ED75 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9945EDEA1DB4CCB70094ED75 /* UserViewController.m */; };
+		996144251DC98CA10034F766 /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 996144241DC98CA10034F766 /* IntroductionViewController.m */; };
+		9961442E1DC99A560034F766 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9961442D1DC99A560034F766 /* demo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,9 @@
 		9945EDE71DB4CCA30094ED75 /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
 		9945EDE91DB4CCB70094ED75 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		9945EDEA1DB4CCB70094ED75 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		996144231DC98CA10034F766 /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroductionViewController.h; path = IntroductionViewController/IntroductionViewController.h; sourceTree = "<group>"; };
+		996144241DC98CA10034F766 /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntroductionViewController.m; path = IntroductionViewController/IntroductionViewController.m; sourceTree = "<group>"; };
+		9961442D1DC99A560034F766 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +128,7 @@
 				9945EDA61DB4B0060094ED75 /* WoolenHome */,
 				9945EDAA1DB4B0060094ED75 /* AppDelegate.h */,
 				9945EDAB1DB4B0060094ED75 /* AppDelegate.m */,
-				993423651DC846E900C5AD44 /* WHBasePreference.h */,
-				993423661DC846E900C5AD44 /* WHBasePreference.m */,
+				996144211DC988F40034F766 /* Utils */,
 				9945EDC31DB4B0060094ED75 /* WoolenHomeTests */,
 				9945EDCE1DB4B0060094ED75 /* WoolenHomeUITests */,
 				9945EDA51DB4B0060094ED75 /* Products */,
@@ -146,6 +150,7 @@
 		9945EDA61DB4B0060094ED75 /* WoolenHome */ = {
 			isa = PBXGroup;
 			children = (
+				996144221DC98A7A0034F766 /* IntroductionViewController */,
 				9945EDE01DB4CA250094ED75 /* DBCore */,
 				9945EDE11DB4CA420094ED75 /* MainViewController */,
 				9945EDA71DB4B0060094ED75 /* Supporting Files */,
@@ -157,6 +162,7 @@
 		9945EDA71DB4B0060094ED75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9961442D1DC99A560034F766 /* demo.mp4 */,
 				9945EDB01DB4B0060094ED75 /* Main.storyboard */,
 				9945EDB61DB4B0060094ED75 /* Assets.xcassets */,
 				9945EDB81DB4B0060094ED75 /* LaunchScreen.storyboard */,
@@ -214,6 +220,24 @@
 				9945EDEA1DB4CCB70094ED75 /* UserViewController.m */,
 			);
 			name = "New Group";
+			sourceTree = "<group>";
+		};
+		996144211DC988F40034F766 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				993423651DC846E900C5AD44 /* WHBasePreference.h */,
+				993423661DC846E900C5AD44 /* WHBasePreference.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		996144221DC98A7A0034F766 /* IntroductionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				996144231DC98CA10034F766 /* IntroductionViewController.h */,
+				996144241DC98CA10034F766 /* IntroductionViewController.m */,
+			);
+			name = IntroductionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9961442E1DC99A560034F766 /* demo.mp4 in Resources */,
 				9945EDBA1DB4B0060094ED75 /* LaunchScreen.storyboard in Resources */,
 				9945EDB71DB4B0060094ED75 /* Assets.xcassets in Resources */,
 				9945EDB21DB4B0060094ED75 /* Main.storyboard in Resources */,
@@ -410,6 +435,7 @@
 				9945EDE81DB4CCA30094ED75 /* PublishViewController.m in Sources */,
 				9945EDAC1DB4B0060094ED75 /* AppDelegate.m in Sources */,
 				993423671DC846E900C5AD44 /* WHBasePreference.m in Sources */,
+				996144251DC98CA10034F766 /* IntroductionViewController.m in Sources */,
 				9945EDEB1DB4CCB70094ED75 /* UserViewController.m in Sources */,
 				9945EDE51DB4CC790094ED75 /* ForumViewController.m in Sources */,
 				9945EDA91DB4B0060094ED75 /* main.m in Sources */,
@@ -507,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -548,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

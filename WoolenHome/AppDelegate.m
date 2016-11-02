@@ -11,8 +11,11 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import "MainViewController.h"
 #import "WHBasePreference.h"
+#import "IntroductionViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UIViewController *rootViewController;
 
 @end
 
@@ -20,30 +23,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    [AVOSCloud setApplicationId:@"MGxchv9us4x5EphPJct2unwt-gzGzoHsz" clientKey:@"GSU7bY8F8ziJiv7hmtar7eiG"];
-    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    //initConfiguration
+    [self initConfigurationWithApplication:application andLaunchOptions:launchOptions];
     
     BOOL isNotFirstLogin = [WHBasePreference getUserInfoNumberByKey:@"notFirstLogin"].boolValue;
     if (!isNotFirstLogin) {
         //展示欢迎界面
-        NSLog(@"展示欢迎界面");
+        _rootViewController = [[IntroductionViewController alloc] init];
     } else {
         //展示登录界面
-        NSLog(@"展示登录界面");
+        _rootViewController = [[MainViewController alloc] init];
     }
     [WHBasePreference saveUserInfoKey:@"notFirstLogin" numberValue:[NSNumber numberWithBool:YES]];
     
-    MainViewController *rootView = [[MainViewController alloc] init];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = rootView;
-    self.window.backgroundColor = [UIColor grayColor];
+    self.window.rootViewController = _rootViewController;
+    self.window.backgroundColor = [UIColor clearColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
 
-- (void) initConfiguration {
+- (void) initConfigurationWithApplication:(UIApplication *)application andLaunchOptions:(NSDictionary *)launchOptions {
+    [AVOSCloud setApplicationId:@"MGxchv9us4x5EphPJct2unwt-gzGzoHsz" clientKey:@"GSU7bY8F8ziJiv7hmtar7eiG"];
+    [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
     manager.enable = YES;
     manager.shouldResignOnTouchOutside = YES;
